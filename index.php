@@ -9,8 +9,8 @@
 	require("mysql_database.php");
 	require("combination.php");
 
-	$max_combo_length=1; // Set the number of words to make a combination
-	initiate_combination(1); // Initiates the combination variables with fresh values, words, combo_length
+	$max_combo_length=2; // Set the number of words to make a combination
+	initiate_combination(); // Initiates the combination variables with fresh values, words, combo_length
 
 	$str=nextCombination();	// get the next dictionary combination
 	$count=0;
