@@ -13,6 +13,7 @@
 	{
 		$count++;
 		$word = str_replace("\n", "", fgets($file));
+		$word=str_replace("\r","",$word);
 		$jsonArr[] = $word;
 		echo "$count - $word\n";
 	}
